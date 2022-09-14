@@ -1,7 +1,13 @@
 ﻿@page
 @model HelloWorld.Pages.HelloWebModel
+@using Students.Model;
 @{
-    ViewData["Title"] = "test";
+    ViewData["Title"] = "HelloWeb";
 }
+
 <h1>@ViewData["Title"]</h1>
 <p>@Model.Message the time is @DateTime.Now</p>
+
+<p>@Model.Sicco.Name</p>
+<p>@Model.Sicco.Id</p>
+<p>@Model.Sicco.ClassId</p>
